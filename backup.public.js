@@ -1,7 +1,7 @@
 // NodeJS script.
 // Резервное копирование БД confluence
 // ===========================
-// version: 1.0.0
+// version: 1.0.1
 // ===========================
 'use strict';
 
@@ -36,12 +36,6 @@ let mailOptions = {
     text: 'TEST BACKUP', // plain text body
     html: '<p>TEST BACKUP</p>' // html body
 };
-
-// Вспомогательные функции================================================
-function realMonth(month) {
-	return ++month;
-};
-// Вспомогательные функции================================================
 
 // Прочитать список файлов в каталоге DUMP_PATH
 try {
